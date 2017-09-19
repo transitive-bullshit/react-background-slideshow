@@ -1,0 +1,6 @@
+coverage/
+examples/
+scripts/
+test/
+rollup.config.*
+.*
