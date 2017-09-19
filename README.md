@@ -6,13 +6,13 @@
 
 ![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/demo/media/slideshow-demo-desktop.gif)
 
-*(Animations sped up for purposes of demo)*
+*(Animations sped up for demo)*
 
 ## Intro
 
-This component is based off of a codrops [article](http://tympanus.net/codrops/2014/06/11/how-to-create-a-tiled-background-slideshow) and is meant to be used as a full viewport background slideshow that can easily add a slick, polished feel to pages that don't have much content.
+This component is meant to be used as a **full viewport background slideshow** that can easily add a slick, polished feel to pages that don't have much content.
 
-I've personally used this component for several projects as the background for login / signup / notification screens where the only content is a single foreground modal generally prompting the user for some info.
+I've personally used it for several projects as the background for login / signup / dialog screens where the only content is a single foreground modal generally prompting the user for some info.
 
 ## Install
 
