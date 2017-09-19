@@ -8,13 +8,13 @@ Alas, a single gif is worth 1MB words...
 
 ## Desktop Demo
 
-TODO
+![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/demo/media/slideshow-demo-desktop.gif)
 
 ## Mobile Demo
 
-TODO
+![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/demo/media/slideshow-demo-mobile.gif)
 
-This component is 100% repsonsive and should work on all screen sizes, which imho is pretty awesome given the complexity of the underlying transition effects.
+This component is fully repsonsive and should work on all screen sizes.
 
 ## Intro
 
@@ -83,4 +83,4 @@ This component is a React port of a jQuery effect published in 2014 in an awesom
 
 ## License
 
-MIT © [Travis Fischer](https://github.com/fisch0920)
+MIT © [Travis Fischer](https://github.com/transitive-bullshit)
