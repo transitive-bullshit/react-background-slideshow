@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 
 import BackgroundSlideshow from 'react-background-slideshow'
 
-import image1 from './assets/1.jpg'
-import image2 from './assets/2.jpg'
-import image3 from './assets/3.jpg'
-import image4 from './assets/4.jpg'
-import image5 from './assets/5.jpg'
-import image6 from './assets/6.jpg'
+import image1 from './assets/001.jpg'
+import image2 from './assets/002.jpg'
+import image3 from './assets/003.jpg'
+import image4 from './assets/004.jpg'
+import image5 from './assets/005.jpg'
+import image6 from './assets/006.jpg'
 
 const images = [
   image1,
@@ -23,8 +23,6 @@ export default class App extends Component {
     return (
       <div>
         <BackgroundSlideshow images={images} />
-
-        <h1>react-tiled-background-slideshow Demo</h1>
       </div>
     )
   }

@@ -26,7 +26,6 @@ export default {
     resolve(),
     commonjs(),
     postcss({
-      extract: true
     }),
     babel({
       exclude: 'node_modules/**'

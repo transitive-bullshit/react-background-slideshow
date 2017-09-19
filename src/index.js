@@ -20,13 +20,17 @@ const tiles = [ 0, 1, 2, 3 ]
 export default class ReactBackgroundSlideshow extends Component {
   static propTypes = {
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
+    disableClick: PropTypes.boolean,
+    disableInterval: PropTypes.boolean,
     animationDelay: PropTypes.number,
     alt: PropTypes.string
   }
 
   static defaultProps = {
+    alt: 'background slideshow',
     animationDelay: 10000,
-    alt: 'background slideshow'
+    disableClick: false,
+    disableInterval: false
   }
 
   state = {
@@ -39,8 +43,9 @@ export default class ReactBackgroundSlideshow extends Component {
   componentDidMount() {
     window.addEventListener('resize', this._onResize)
 
+    this._isAnimating = false
     this._resetTransforms()
-    this._timeout = setTimeout(this._onTransition, this.props.animationDelay)
+    this._resetTransitionTimeout()
   }
 
   componentWillUnmount() {
@@ -60,6 +65,7 @@ export default class ReactBackgroundSlideshow extends Component {
   render() {
     const {
       alt,
+      disableClick,
       images
     } = this.props
 
@@ -76,7 +82,7 @@ export default class ReactBackgroundSlideshow extends Component {
     return (
       <div
         className={`box-gallery ${effectName}`}
-        onClick={this._onTransition}
+        onClick={disableClick ? null : this._onTransition}
       >
         {images.map((image, i) => {
           const isCurrent = (i === current)
@@ -180,6 +186,9 @@ export default class ReactBackgroundSlideshow extends Component {
   }
 
   _onTransition = (direction = 'next') => {
+    if (this.state.isAnimating || this._isAnimating) return false
+    this._isAnimating = true
+
     if (this._timeout) {
       clearTimeout(this._timeout)
       this._timeout = null
@@ -217,9 +226,21 @@ export default class ReactBackgroundSlideshow extends Component {
     this.setState({
       isAnimating: false,
       current: this._getNextPanel()
+    }, () => {
+      this._isAnimating = false
+      this._resetTransitionTimeout()
     })
+  }
 
-    this._timeout = setTimeout(this._onTransition, this.props.animationDelay)
+  _resetTransitionTimeout() {
+    const {
+      animationDelay,
+      disableInterval
+    } = this.props
+
+    if (!disableInterval) {
+      this._timeout = setTimeout(this._onTransition, animationDelay)
+    }
   }
 
   _getNextPanel = () => {

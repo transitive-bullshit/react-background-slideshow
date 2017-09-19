@@ -1,8 +1,8 @@
 {
   "name": "react-background-slideshow",
   "version": "1.0.0",
-  "description": "Spiffy tiled background image slideshow for React",
-  "author": "",
+  "description": "Sexy tiled background image slideshow for React",
+  "author": "Travis Fischer",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -33,9 +33,6 @@
     "babel-preset-es2015-rollup": "^3.0.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.1",
