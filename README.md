@@ -4,17 +4,7 @@
 
 [![NPM](https://img.shields.io/npm/v/react-background-slideshow.svg)](https://www.npmjs.com/package/react-background-slideshow) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-Alas, a single gif is worth 1MB words...
-
-## Desktop Demo
-
 ![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/demo/media/slideshow-demo-desktop.gif)
-
-## Mobile Demo
-
-![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/demo/media/slideshow-demo-mobile.gif)
-
-This component is fully repsonsive and should work on all screen sizes.
 
 ## Intro
 
@@ -76,6 +66,12 @@ npm start
 ```
 
 This will start the create-react-app dev server locally on port 3000 and open the demo app in your default browser.
+
+## Mobile Demo
+
+![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/demo/media/slideshow-demo-mobile.gif)
+
+This component is fully repsonsive and should work on all screen sizes.
 
 ## Credit
 
