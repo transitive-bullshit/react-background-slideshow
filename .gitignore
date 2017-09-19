@@ -3,8 +3,9 @@
 # dependencies
 node_modules
 
-# release build
-/dist
+# builds
+build
+dist
 
 # misc
 .DS_Store

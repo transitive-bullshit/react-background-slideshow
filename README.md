@@ -1,6 +1,6 @@
 # react-background-slideshow
 
-> Sexy tiled background image slideshow for React.
+> Sexy tiled background image slideshow for React - [Try it out!](https://transitive-bullshit.github.io/react-background-slideshow) :fire:
 
 [![NPM](https://img.shields.io/npm/v/react-background-slideshow.svg)](https://www.npmjs.com/package/react-background-slideshow) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -60,9 +60,9 @@ The `BackgroundSlideshow` component will have `position: absolute` and sized to 
 
 *Note* the component will randomly choose an image to start from.
 
-## Demo
+## [Demo](https://transitive-bullshit.github.io/react-background-slideshow)
 
-This repo comes with an example [create-react-app](https://github.com/facebookincubator/create-react-app) under `demo/` that can be run locally to experiment with the component.
+This repo comes with an example [create-react-app](https://github.com/facebookincubator/create-react-app) under `demo/` that can be run locally to experiment with the component. This demo is also hosted [here](https://transitive-bullshit.github.io/react-background-slideshow).
 
 ```bash
 cd demo
