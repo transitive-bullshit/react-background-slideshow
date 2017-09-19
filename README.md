@@ -42,6 +42,8 @@ export default class App extends Component {
 }
 ```
 
+The `BackgroundSlideshow` component will have `position: absolute` and sized to stretch with its container, which will most often be the root `window`.
+
 ## API
 
 ### ReactBackgroundSlideshow
@@ -55,6 +57,7 @@ export default class App extends Component {
 **Note** I highly recommend using background images with a resolution of 1280x850. The effects have not been tested thoroughly with other asset sizes and there is a possibility that other aspect ratios break some of the internal assumptions, as the effects are using `<img>` elements and css transforms instead of `background-image` / `backgrouns-size: contain or cover` for performance reasons. If you have any questions or run into issues with this constraint, I recommend reading through the original [codrops article](http://tympanus.net/codrops/2014/06/11/how-to-create-a-tiled-background-slideshow) thoroughly.
 
 *Note* there are 3 distinct transition effects, and the component will randomly cycle through them.
+
 *Note* the component will randomly choose an image to start from.
 
 ## Demo
@@ -73,7 +76,7 @@ This will start the create-react-app dev server locally on port 3000 and open th
 
 ![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/demo/media/slideshow-demo-mobile.gif)
 
-This component is fully repsonsive and should work on all screen sizes.
+This component is fully repsonsive and should work on all screen sizes. The above gif was captured from an emulated iPhone 6.
 
 ## Credit
 
