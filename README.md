@@ -5,6 +5,7 @@
 [![NPM](https://img.shields.io/npm/v/react-background-slideshow.svg)](https://www.npmjs.com/package/react-background-slideshow) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/demo/media/slideshow-demo-desktop.gif)
+
 *(Animations sped up for purposes of demo)*
 
 ## Intro
