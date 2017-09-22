@@ -76,7 +76,7 @@ This will start the create-react-app dev server locally on port 3000 and open th
 
 ![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/demo/media/slideshow-demo-mobile.gif)
 
-This component is fully repsonsive and should work on all screen sizes. The above gif was captured from an emulated iPhone 6.
+This component is fully responsive and should work on all screen sizes. The above gif was captured from an emulated iPhone 6.
 
 ## Credit
 
