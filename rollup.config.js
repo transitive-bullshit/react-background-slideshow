@@ -1,7 +1,8 @@
 import babel from 'rollup-plugin-babel'
 import commonjs from 'rollup-plugin-commonjs'
-import resolve from 'rollup-plugin-node-resolve'
+import external from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
+import resolve from 'rollup-plugin-node-resolve'
 
 import pkg from './package.json'
 
@@ -17,18 +18,15 @@ export default {
       format: 'es'
     }
   ],
-  external: [
-    'react',
-    'react-dom',
-    'prop-types'
-  ],
   plugins: [
-    resolve(),
-    commonjs(),
     postcss({
+      modules: false
     }),
+    external(),
     babel({
       exclude: 'node_modules/**'
-    })
+    }),
+    resolve(),
+    commonjs()
   ]
 }

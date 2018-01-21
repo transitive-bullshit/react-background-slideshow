@@ -1,6 +1,6 @@
 coverage/
-examples/
 scripts/
+example/
 test/
 rollup.config.*
 .*

@@ -20,8 +20,8 @@ const tiles = [ 0, 1, 2, 3 ]
 export default class ReactBackgroundSlideshow extends Component {
   static propTypes = {
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
-    disableClick: PropTypes.boolean,
-    disableInterval: PropTypes.boolean,
+    disableClick: PropTypes.bool,
+    disableInterval: PropTypes.bool,
     animationDelay: PropTypes.number,
     alt: PropTypes.string
   }

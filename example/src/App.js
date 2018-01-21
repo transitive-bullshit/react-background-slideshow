@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import BackgroundSlideshow from 'react-background-slideshow'
+import ReactBackgroundSlideshow from 'react-background-slideshow'
 
 import image1 from './assets/001.jpg'
 import image2 from './assets/002.jpg'
@@ -21,9 +21,7 @@ const images = [
 export default class App extends Component {
   render () {
     return (
-      <div>
-        <BackgroundSlideshow images={images} />
-      </div>
+      <ReactBackgroundSlideshow images={images} />
     )
   }
 }

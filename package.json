@@ -15,7 +15,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
-    "dev": "rollup -c -w"
+    "start": "rollup -c -w",
+    "prepublish": "npm run build",
+    "predeploy": "cd example && npm install && npm run build",
+    "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
     "raf": "^3.3.2"
@@ -27,18 +30,20 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.0",
-    "babel-preset-es2015-rollup": "^3.0.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "rollup": "^0.50.0",
-    "rollup-plugin-babel": "^3.0.2",
+    "gh-pages": "^1.1.0",
+    "rollup": "^0.54.0",
+    "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.2.1",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-postcss": "^0.5.5"
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-peer-deps-external": "^2.0.0",
+    "rollup-plugin-postcss": "^1.1.0"
   },
   "files": [
     "dist"

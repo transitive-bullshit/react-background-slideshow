@@ -1,13 +1,14 @@
 {
-  "name": "react-background-slideshow-demo",
+  "name": "react-background-slideshow-example",
   "homepage": "https://transitive-bullshit.github.io/react-background-slideshow",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "react": "^15.6.1",
-    "react-background-slideshow": "^1.0.0",
+    "react-background-slideshow": "^1.0.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.13"
+    "react-scripts": "1.0.8"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -16,8 +17,5 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "gh-pages": "^1.0.0"
   }
 }
