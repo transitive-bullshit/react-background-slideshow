@@ -4,7 +4,7 @@
 
 [![NPM](https://img.shields.io/npm/v/react-background-slideshow.svg)](https://www.npmjs.com/package/react-background-slideshow) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/demo/media/slideshow-demo-desktop.gif)
+![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/example/media/slideshow-demo-desktop.gif)
 
 *(Animations sped up for demo)*
 
@@ -62,10 +62,10 @@ The `BackgroundSlideshow` component will have `position: absolute` and sized to 
 
 ## [Demo](https://transitive-bullshit.github.io/react-background-slideshow)
 
-This repo comes with an example [create-react-app](https://github.com/facebookincubator/create-react-app) under `demo/` that can be run locally to experiment with the component. This demo is also hosted [here](https://transitive-bullshit.github.io/react-background-slideshow).
+This repo comes with an example [create-react-app](https://github.com/facebookincubator/create-react-app) under `example/` that can be run locally to experiment with the component. This demo is also hosted [here](https://transitive-bullshit.github.io/react-background-slideshow).
 
 ```bash
-cd demo
+cd example
 npm install
 npm start
 ```
@@ -74,7 +74,7 @@ This will start the create-react-app dev server locally on port 3000 and open th
 
 ## Mobile Demo
 
-![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/demo/media/slideshow-demo-mobile.gif)
+![](https://raw.githubusercontent.com/transitive-bullshit/react-background-slideshow/master/example/media/slideshow-demo-mobile.gif)
 
 This component is fully responsive and should work on all screen sizes. The above gif was captured from an emulated iPhone 6.
 
