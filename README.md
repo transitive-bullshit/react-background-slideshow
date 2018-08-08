@@ -53,6 +53,8 @@ The `BackgroundSlideshow` component will have `position: absolute` and sized to 
 - `props.disableInterval` - boolean, optional disables automated automation at interval specified by `automationDelay` (default `false`)
 - `props.animationDelay` - number, optional specifies the interval in ms for transitions while idle (default `10000`)
 - `props.alt` - string, optional specifies the alt attribute to use for the underlying `<img>` elements (default `background slideshow`)
+- `props.startAt` - number, optional specifies the index to start the slideshow at. By default will randomly select one.
+- `props.onChange` - function, optional specifies the callback to call when the transition is complete. This is sent the argument { index: number, image: string }. `index` is the `props.images` index the slideshow is showing. `image` is the image url from `images` being shown after the change.
 
 **Note** I highly recommend using background images with a resolution of 1280x850. The effects have not been tested thoroughly with other asset sizes and there is a possibility that other aspect ratios break some of the internal assumptions, as the effects are using `<img>` elements and css transforms instead of `background-image` / `backgrouns-size: contain or cover` for performance reasons. If you have any questions or run into issues with this constraint, I recommend reading through the original [codrops article](http://tympanus.net/codrops/2014/06/11/how-to-create-a-tiled-background-slideshow) thoroughly.
 
