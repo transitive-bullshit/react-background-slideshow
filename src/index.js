@@ -23,7 +23,9 @@ export default class ReactBackgroundSlideshow extends Component {
     disableClick: PropTypes.bool,
     disableInterval: PropTypes.bool,
     animationDelay: PropTypes.number,
-    alt: PropTypes.string
+    alt: PropTypes.string,
+    onChange: PropTypes.func,
+    startAt: PropTypes.number,
   }
 
   static defaultProps = {
@@ -36,7 +38,7 @@ export default class ReactBackgroundSlideshow extends Component {
   state = {
     isAnimating: false,
     direction: 'next',
-    current: Math.random() * this.props.images.length | 0,
+    current: this.props.startAt || (Math.random() * this.props.images.length | 0),
     effect: Math.random() * 3 | 0
   }
 
@@ -227,6 +229,12 @@ export default class ReactBackgroundSlideshow extends Component {
       isAnimating: false,
       current: this._getNextPanel()
     }, () => {
+      const { onChange, images = [] } = this.props
+      const { current } = this.state
+      const image = images[current]
+      if (onChange) {
+        onChange({ index: current, image })
+      }
       this._isAnimating = false
       this._resetTransitionTimeout()
     })
