@@ -18,10 +18,16 @@ const images = [
   image6
 ]
 
+const props = {
+  images,
+  // startAt: 0,
+  onChange: ({ index, image }) => console.log('changed image', { index, image })
+}
+
 export default class App extends Component {
   render () {
     return (
-      <ReactBackgroundSlideshow images={images} />
+      <ReactBackgroundSlideshow {...props} />
     )
   }
 }

@@ -38,7 +38,11 @@ export default class ReactBackgroundSlideshow extends Component {
   state = {
     isAnimating: false,
     direction: 'next',
-    current: this.props.startAt || (Math.random() * this.props.images.length | 0),
+    current: (
+      typeof this.props.startAt !== 'undefined' ?
+        this.props.startAt :
+        (Math.random() * this.props.images.length | 0)
+    ),
     effect: Math.random() * 3 | 0
   }
 
